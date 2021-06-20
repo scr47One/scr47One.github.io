@@ -1,4 +1,36 @@
-.article {color: teal;}
-.address {color: chocolate;}
-.header {color:coral}
-.nav{color:brown}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.body
+{
+    font-size: 15px;
+    font-family: Segoe UI;
+    background-color: darkslategray;
+    color: bisque;   
+}
+.body__header
+{
+    font: size 2em;
+    color: darksalmon;
+}
+.body__header__hgroup
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: bisque;
+}
+.body__section
+{
+    font-size: 2em;
+    color: darksalmon;
+
+}  
+.body__section__article__hgroup
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: bisque;
+}
+  
+
