@@ -1,9 +1,8 @@
 .body
 {
-    font-size: 15px;
+    font-size: 30px;
     font-family: Helvetica;
-    font-variant: small-caps;
-    background-color: rgb(231, 110, 106);
+    background-color: rgb(255, 255, 255);
     color: black;   
 }
 /*
@@ -16,42 +15,47 @@ margin: es el margen fuera de la caja
 /*
 Position
 relative> 
-*/
+
 .body__header
 {
     background-color: rgb(231, 110, 106);
     margin: 20px 10px;
     border-radius: 40px;
-    box-shadow: 7px 7px 20px  rgb(195, 94, 90),-7px -7px 20px  rgb(236, 136, 133);
+    box-shadow: 7px 7px 20px  rgb(255, 255, 255),-7px -7px 20px  rgb(182, 182, 182);
 }
+*/
 .body__header__hgroup
 {
-    font-size: 1.5em;
-    padding: 30px;
-    font-family: Helvetica, sans-serif;
+
+    padding: 40px;
+    font-family: Helvetica Inserat LT Std Extranegrita;
     color: black;
+    background-color: rgb(231, 110, 106);
+    margin: 20px 10px;
+    border-radius: 40px;
+    box-shadow: 7px 7px 20px  rgb(255, 255, 255),-7px -7px 20px  rgb(136, 136, 136);
 }
 .body__nav, .body__section
 {
-    font-size: 1.5em;
+    font-size: 1em;
     color: black;
     padding: 40px;
     background-color: rgb(231, 110, 106);
     border-radius: 40px;
     margin: 20px 10px;
     border-style: outset white;
-    box-shadow: 7px 7px 20px  rgb(195, 94, 90),-7px -7px 20px  rgb(236, 136, 133);
+    box-shadow: 7px 7px 20px  rgb(255, 255, 255),-7px -7px 20px  rgb(136, 136, 136);
 }
 .body__section__article__p
 {
-    font-size: 1.5em;
+ 
     color: black;
     padding: 40px;
-    background-color: rgb(112, 211, 109);
+    background-color: rgb(214, 180, 180);
     border-radius: 40px;
     margin: 20px 10px;
     border-style: outset white;
-    box-shadow: 7px 7px 20px  rgb(86, 136, 84),-7px -7px 20px  rgb(169, 216, 168)
+    box-shadow: 7px 7px 20px  rgb(136, 84, 84),-7px -7px 20px  rgb(216, 168, 168)
 }
 .body__section__time
 {
