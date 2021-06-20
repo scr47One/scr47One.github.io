@@ -42,14 +42,26 @@ relative>
     border-style: outset white;
     box-shadow: 7px 7px 20px  rgb(195, 94, 90),-7px -7px 20px  rgb(236, 136, 133);
 }
+.body__section__article__p
+{
+    font-size: 1.5em;
+    color: black;
+    padding: 40px;
+    background-color: rgb(112, 211, 109);
+    border-radius: 40px;
+    margin: 20px 10px;
+    border-style: outset white;
+    box-shadow: 7px 7px 20px  rgb(86, 136, 84),-7px -7px 20px  rgb(169, 216, 168)
+}
 .body__section__time
 {
     font-size: 1em;
     color: black;
 }
+
 .body__section__article__hgroup
 {
-    font-family: Helvetica, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Helvetica;
     color: black;
     font-size: smaller;
 }  
