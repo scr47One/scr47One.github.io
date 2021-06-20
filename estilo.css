@@ -1,9 +1,9 @@
 .body
 {
     font-size: 15px;
-    font-family: Segoe UI;
-    background-color:  rgb(77, 116, 116);
-    color: bisque;   
+    font-family: Helvetica;
+    background-color: rgb(231, 110, 106);
+    color: black;   
 }
 /*
 propiedades de cajas
@@ -12,52 +12,44 @@ padding: es el margen dentro de la caja
 border: es el borde de la caja
 margin: es el margen fuera de la caja
 */
-
+/*
+Position
+relative> 
+*/
 .body__header
 {
-    background-color: rgb(77, 116, 116);
+    background-color: rgb(231, 110, 106);
     margin: 20px 10px;
     border-radius: 40px;
-    box-shadow: 7px 7px 20px  rgb(56, 80, 80),-7px -7px 20px  rgb(118, 155, 155);
+    box-shadow: 7px 7px 20px  rgb(195, 94, 90),-7px -7px 20px  rgb(236, 136, 133);
 }
 .body__header__hgroup
 {
     font-size: 1.5em;
     padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: bisque;
+    font-family: Helvetica, sans-serif;
+    color: black;
 }
-.body__nav
+.body__nav, .body__section
 {
     font-size: 1.5em;
-    color: rgb(236, 192, 177);
+    color: black;
     padding: 40px;
-    background-color: rgb(77, 116, 116);
+    background-color: rgb(231, 110, 106);
     border-radius: 40px;
     margin: 20px 10px;
     border-style: outset white;
-    box-shadow: 7px 7px 20px  rgb(56, 80, 80),-7px -7px 20px  rgb(118, 155, 155);
+    box-shadow: 7px 7px 20px  rgb(195, 94, 90),-7px -7px 20px  rgb(236, 136, 133);
 }
-.body__section
-{
-    font-size: 1.5em;
-    color: rgb(236, 192, 177);
-    padding: 40px;
-    background-color: rgb(77, 116, 116);
-    border-radius: 40px;
-    margin: 20px 10px;
-    border-style: outset white;
-    box-shadow: 7px 7px 20px  rgb(56, 80, 80),-7px -7px 20px  rgb(118, 155, 155);
-}  
 .body__section__time
 {
     font-size: 1em;
-    color: rgb(212, 214, 240);
+    color: black;
 }
 .body__section__article__hgroup
 {
-    font-family: Arial, Helvetica, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    color: bisque;
+    font-family: Helvetica, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
     font-size: smaller;
 }  
 
