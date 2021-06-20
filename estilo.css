@@ -1,38 +1,61 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-
 .body
 {
     font-size: 15px;
     font-family: Segoe UI;
-    background-color: darkslategray;
+    background-color: rgb(48, 65, 65);
     color: bisque;   
 }
-
 /*
+propiedades de cajas
+content: es el contenido de la caja
+padding: es el margen dentro de la caja
+border: es el borde de la caja
+margin: es el margen fuera de la caja
+*/
+
 .body__header
 {
     font: size 2em;
-    color: darksalmon;
+    color: white;
+    background-color: rgb(23, 58, 71);
+    margin: 20px 10px;
+    border-radius: 40px;
 }
 .body__header__hgroup
 {
-    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    font-family: Helvetica;
     color: bisque;
+}
+.body__nav
+{
+    font-size: 1.5em;
+    color: rgb(236, 192, 177);
+    padding: 40px;
+    background-color: rgb(77, 116, 116);
+    border-radius: 40px;
+    margin: 20px 10px;
+    border-style: outset white;
 }
 .body__section
 {
-    font-size: 2em;
-    color: darksalmon;
-
+    font-size: 1.5em;
+    color: rgb(236, 192, 177);
+    padding: 40px;
+    background-color: rgb(77, 116, 116);
+    border-radius: 40px;
+    margin: 20px 10px;
+    border-style: outset white;
 }  
+.body__section__time
+{
+    font-size: 1em;
+    color: rgb(212, 214, 240);
+}
 .body__section__article__hgroup
 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Helvetica;
     color: bisque;
-}
-*/  
+    font-size: smaller;
+}  
 
