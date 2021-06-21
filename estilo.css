@@ -1,7 +1,13 @@
+
+@font-face {
+    font-family: 'Neue Helvetica';
+    src: url('../Fuentes/Helvetica/Neue Helvetica/HelveticaNeueLTCom-Blk.ttf');
+}
+
 .body
 {
     font-size: 30px;
-    font-family: Helvetica;
+    font-family: 'Neue Helvetica';
     background-color: rgb(255, 255, 255);
     color: black;   
 }
@@ -28,7 +34,7 @@ relative>
 {
 
     padding: 40px;
-    font-family: Helvetica Inserat LT Std Extranegrita;
+    font-family:  'Arial Rounded MT Negrita';
     color: black;
     background-color: rgb(231, 110, 106);
     margin: 20px 10px;
@@ -51,7 +57,7 @@ relative>
  
     color: black;
     padding: 40px;
-    background-color: rgb(214, 180, 180);
+    background-color: rgb(255, 255, 255);
     border-radius: 40px;
     margin: 20px 10px;
     border-style: outset white;
