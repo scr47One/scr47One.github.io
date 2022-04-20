@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="styles/estilos.css" />
     <meta charset="UTF-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,14 +15,15 @@
   </head>
   <body>
     <div id="header_index" class="header">
-      <ul>
-        
-        <li><a href="centros.html">Centros de ayuda oficiales</a></li>
-        <li><a href="aprendizaje.html">Aprendizaje</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="sobre_mi.html">Sobre mi</a></li>
-        <li><img src="imagenes_principal/SVG/Recurso 3.svg"  style="width: 50%"></li>
-      </ul>
+      <div id="header_logo"><img src="imagenes_principal/Logo.svg"></div>
+      <div class="header_ul">
+        <ul>
+          <li><a href="centros.html">Centros de ayuda oficiales</a></li>
+          <li><a href="aprendizaje.html">Aprendizaje</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sobre_mi.html">Sobre mi</a></li>
+        </ul>
+      </div>
     </div>
     <div id="principal_index" class="principal">
       <div class="principal_imagen">
@@ -34,19 +35,59 @@
           <span>más sencilla</span>
         </div>
       </div>
-
       <div class="principal_a">
         <a href="aprendizaje.html">Descubre cómo </a>
       </div>
     </div>
-    <div id="pasos_index">
-      
+    <div id="pasos_index" class="pasos">
+      <div class="pasos_imagen">
+        <div class="pasos_a_1"><img src="imagenes_principal/SELECCIONA.gif" alt="selecciona" ></div>
+        <div class="pasos_a_2"><img src="imagenes_principal/simula.gif"  alt="simula" ></div>
+        <div class="pasos_a_3"><img src="imagenes_principal/aprende.gif" alt="aprende" ></div>
+      </div>
+      <div class="pasos_p">      
+        <p>Selecciona</p>
+        <p>Simula</p>
+        <p>Aprende</p>
+      </div>
     </div>
     <div id="contenido_index" class="contenido">
-      <a href="simulaciones/ingenieria_social.html">Ataque por ingenieria social</a>
-      <a href="simulaciones/malware.html">Ataque por malware</a>
-      <a href="simulaciones/conexion.html">Ataque a conexión</a>
-      <a href="simulaciones/contrasena.html">Ataques a contraseñas</a>
+      <div class="contenido_ingenieria_social">
+        <div>
+          <h3>Ataque por ingenieria social</h3>
+          <p>lksjñdlfkjasñldfkjñlaskjdfñlkjasñldkfjñlakjsdñlfkjasñldkfjñlaskjdfñlkajsñdlfkjañlskjdf</p>
+          <a href="simulaciones/ingenieria_social.html">Explorar</a>
+        </div>
+        <img src="imagenes_principal/INGENIERIA_SOCIAL.gif" alt="Ingenieria social">
+      </div>
+    
+    <div class="contenido_malware">
+      <div>
+        <h3>Ataque por Malware</h3>
+        <p>lksjñdlfkjasñldfkjñlaskjdfñlkjasñldkfjñlakjsdñlfkjasñldkfjñlaskjdfñlkajsñdlfkjañlskjdf</p>
+        <a href="simulaciones/malware.html">Explorar</a>
+      </div>
+      <img src="imagenes_principal/MALWARE.gif" alt="Malware">
+  </div>
+    <div class="contenido_conexion">
+      <div>
+        <h3>Ataque a conexion</h3>
+        <p>lksjñdlfkjasñldfkjñlaskjdfñlkjasñldkfjñlakjsdñlfkjasñldkfjñlaskjdfñlkajsñdlfkjañlskjdf</p>
+        <a href="simulaciones/conexion.html">Explorar</a>
+      </div>
+      <img src="imagenes_principal/CONEXIONES copia.gif" alt="Conexion">
+  </div>
+  <div class="contenido_contrasena">
+    <div>
+      <h3>Ataque a contrasena</h3>
+      <p>lksjñdlfkjasñldfkjñlaskjdfñlkjasñldkfjñlakjsdñlfkjasñldkfjñlaskjdfñlkajsñdlfkjañlskjdf</p>
+      <a href="simulaciones/contrasena.html">Explorar</a>
+    </div>
+    <img src="imagenes_principal/CONTRASENAS copia.gif" alt="Contrasena">
+  </div>
+</div>
+     
+     
     </div>
     <div id="footer_index" class="footer">
       <a href="centros.html">Centros de ayuda oficiales</a>
@@ -54,5 +95,6 @@
       <a href="contacto.html">Contacto</a>
       <a href="sobre_mi.html">Sobre mi</a>
     </div>
+  </div>
   </body>
 </html>
