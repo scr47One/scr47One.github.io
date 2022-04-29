@@ -8,55 +8,85 @@
       rel="stylesheet"
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/estilos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <meta charset="UTF-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre mi</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: --color-tierra-claro">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Aprende Ciberseguridad</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre_mi.html">Sobre mí</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="aprendizaje.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Aprendizaje
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="simulaciones/ingenieria_social.html">Ataques por ingenieria social</a></li>
-              <li><a class="dropdown-item" href="simulaciones/malware.html">Ataques por malware</a></li>
-              <li><a class="dropdown-item" href="simulaciones/contrasena.html">Ataques a contraseñas</a></li>
-              <li><a class="dropdown-item" href="simulaciones/conexion.html">Ataques a conexiones</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html" tabindex="-1" >Contacto</a>
-          </li>
-        </ul>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <span class="navbar-brand"><h4 class="logo">Aprende Ciberseguridad</h4></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-dk-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="sobre_mi.html">Sobre mí</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="aprendizaje.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aprendizaje</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="simulaciones/ingenieria_social.html">Ataques por ingenieria social</a></li>
+                <li><a class="dropdown-item" href="simulaciones/malware.html">Ataques por malware</a></li>
+                <li><a class="dropdown-item" href="simulaciones/contrasena.html">Ataques a contraseñas</a></li>
+                <li><a class="dropdown-item" href="simulaciones/conexion.html">Ataques a conexiones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html" tabindex="-1">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
+  </header>
+  <main>
+    <div class="row row-cols-sm-1 g-1">
       
-      <div id="footer_index" class="footer">
-        <a href="centros.html">Centros de ayuda oficiales</a>
-        <a href="aprendizaje.html">Aprendizaje</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="sobre_mi.html">Sobre mi</a>
-        <a href="index.html">Inicio</a>
+      <div class="container col" data-aos="slide-down" style="background-image: url(imagenes_principal/banner_sobre_mi.jpg); padding: 80pt;">
+        <h2 style="color:#4f4f4f; background-color:#CCEAF4; padding: 50pt; " class="text-wrap col">
+          “Lo fundamental de la ciberseguridad, es aprender que 
+          <span style="color: #ff3b3d">
+            lo seguro hoy, puede no serlo mañana</span> ”</h2>
+        <h3 style="color:#4f4f4f; background-color:#efefef; padding: 50pt;" class="text-wrap col" data-aos="slide-down">
+              Hola, me llamo Humberto, tengo 22 años y entre muchas otras cosas soy estudiante de Ingeniería en Sistemas Computacionales.
+               Podría decir que mi vida ha sido un constante cambio y busqueda de compartir conocimiento a través de mi propia experiencia.
+  <br>
+  <br>
+              Esta página esta hecha para aquellas personas que busquen una forma diferente de aprender sobre Ciberseguridad 
+               algo que ahora en estos tiempos debe ser tan común como saber dónde dejaste tu cartera o dónde estacionaste tu carro,
+                puesto que la tecnología es algo con lo que estamos conviviendo de forma constante en nuestro día a día.
+        </h3>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </main>
+  <footer id="footer_index" class="footer" style="background-color: #a9a9a9">
+    <div class="container my-5">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="centros.html">Centros de ayuda oficiales</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="aprendizaje.html">Aprendizaje</a>
+        </li>
+        <li class="list-inline-item"><a href="contacto.html">Contacto</a></li>
+        <li class="list-inline-item"><a href="sobre_mi.html">Sobre mi</a></li>
+        <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+    <div class="text-center p-3" style="background-color: #4f4f4f">
+      © 2022 Copyright:
+      <a href="https://github.com/scr47One">scr47One</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" ></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: "ease-out-back",
+    duration: 700,
+  });
+</script> 
+   
 </body>
 </html>
