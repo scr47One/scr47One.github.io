@@ -24,19 +24,16 @@ body {
 }
 
 h4{
-  font-size:1vw;
   font-weight: 600 !important;
-  /* color:#4f4f4f !important; */
 }
 h3{
-  font-size:2vw;
+  
   font-weight: 600 !important;
-  /* color:#4f4f4f !important; */
 }
 h2{
-  font-size: 4vw;
+  
   font-weight: 900 !important;
-  /* color:#4f4f4f !important; */
+  
 }
 .logo{
   font-weight: 800 !important;
