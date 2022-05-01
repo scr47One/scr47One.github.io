@@ -35,10 +35,7 @@ h2{
   font-weight: 900 !important;
   
 }
-.logo{
-  font-weight: 800 !important;
-  color:#4f4f4f !important;
-}
+
 h1{
   font-size:6vw;
   font-weight: 900;
@@ -190,6 +187,9 @@ h1{
   color: #ff3b3d !important;
   font-weight: 700;
   text-decoration: none;
+}
+a {
+  text-decoration: none !important;
 }
 footer a{
   color: var(--color-azul-c);

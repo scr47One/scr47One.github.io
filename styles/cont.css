@@ -1,0 +1,20 @@
+@media screen and (min-width: 990px) {
+    .img-sm {
+      width: 0%;
+      position: absolute;
+    }
+    .img-lg {
+        max-width: 25%;
+        position: relative;
+    }
+  }
+@media screen and (max-width: 990px) {
+    .img-sm {
+      max-width: 70%;
+      position: relative;
+    }
+    .img-lg {
+        position: absolute;
+        width:0%;
+    }
+  }
