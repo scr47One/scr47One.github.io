@@ -1,0 +1,27 @@
+
+:root{
+    --color-gris: #4f4f4f;
+    
+    
+    --color-rojo-vivo: #ff3b3d;
+    
+    
+    --color-tierra-claro: #A9A9A9;
+    
+    
+    --color-arena: #efefef;
+    
+    
+    --color-azul-c: #CCEAF4;
+    
+  }
+  
+.contrasena{
+    font-weight: 900;
+    color:var(--color-rojo-vivo);
+}
+li{
+    color:var(--color-rojo-vivo);
+}
+
+  
