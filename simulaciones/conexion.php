@@ -23,7 +23,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ataques de malware</title>
+        <title>Ataques a conexiones</title>
         
     </head>
     <body>
@@ -55,11 +55,34 @@
         </nav>
       </header>
       <main>
-        <div style="background-image: url(../imagenes_principal/ups.jpg); width: 100%; padding:4vw;">
-          <div class="container" style="background-color: #a9a9a9;">
-              <h1 class="text-wrap" style="color:#ff3b3d;font-weight: 800;" class="my-3">No des click en links de dudosa procedencia y mucho menos insertes información personal en ellos</h1>
+        <div style="background-image:url(../imagenes_principal/fondo_conexiones.jpg); width: 100%; padding:4vw;" class="row row-col-1">
+          <div class="container" data-aos="fade-up" style="background-color:#CCEAF4">
+          <h2 style="color:#4f4f4f" class="my-5" data-aos="fade-up">Ataques a conexiones</h2>
+            <h4 style="color: #a9a9a9" class="my-5" data-aos="fade-up">
+              Los ataques a las conexiones inalámbricas son muy 
+  comunes, y los ciberdelincuentes se sirven de diversos 
+  software y herramientas con las que saltarse las medidas 
+  de seguridad e infectar o tomar control de nuestros 
+  dispositivos. 
+  Generalmente, este tipo de ataques se basan en 
+  interponerse en el intercambio de información entre 
+  nosotros y el servicio web, para monitorizar y robar datos 
+  personales, bancarios, contraseñas, etc. </h4>
           </div>
-        </div>
+
+  <div style="background-color:#4f4f4f; width: 100%; padding:4vw;" data-aos="slide-right" class="col">
+    <h3 style="color:#efefef" class="my-5">A continuación te presento un ejemplo de una web bastante similar a una red social muy conocida. <br>
+      Esta web es una página falsa de inicio de sesión y este método (páginas falsas) es bastante utilizado para obtener datos como el correo o contraseña del usuario, redirigiendolo a la página real y mandando la información ingresada directamente al atacante. <br> Este método se llama Web Spoofing.
+    </h3>
+    <a href="twtr.php" target="_blank" style="color:#CCEAF4; background-color:#ff3b3d; padding:1vw;" class="btn mx-2 my-2">Página de inicio de sesión falso</a>
+    <h3 style="color:#CCEAF4" class="my-5">Dentro de ella puedes insertar un correo por ejemplo este: correoprueba@prueba.com y la contraseña: contrasena
+      y así ver cómo funciona una de las formas de robar información muy utilizada como lo es el Web Spoofing. <br>
+      Cuando des click en Sign in los datos ingresados se mostrarán en otra página</h3>
+
+  <small style="color:#CCEAF4">Los datos ingresados en la página de inicio falsa no son guardados ni compartidos con terceros o utilizados con otros fines que no sean educacionales. <br></small>
+  
+  </div>
+            </div>
       </main>
 
       <footer id="footer_index" class="footer" style="background-color: #a9a9a9">
@@ -90,5 +113,5 @@
           duration: 700,
         });
       </script>    
-      </body>
+</body>
 </html>

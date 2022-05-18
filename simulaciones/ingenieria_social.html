@@ -41,13 +41,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link active" href="../sobre_mi.html">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../sobre_mi.html">Acerca de</a></li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aprendizaje</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="ingenieria_social.html">Ataques por ingenieria social</a></li>
                     <li><a class="dropdown-item" href="malware.html">Ataques por malware</a></li>
                     <li><a class="dropdown-item" href="contrasena.html">Ataques a contraseñas</a></li>
-                    <li><a class="dropdown-item" href="conexion.html">Ataques a conexiones</a></li>
+                    <li><a class="dropdown-item" href="conexion.php">Ataques a conexiones</a></li>
                   </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="../contacto.html" tabindex="-1">Contacto</a></li>
@@ -58,10 +58,10 @@
         </nav>
       </header>
       <main>
-        <div style="background-color:#efefef; width: 100%; padding:4vw;" class="row row-col-1">
-          <div class="container" data-aos="fade-up">
+        <div style="background-image: url(../imagenes_principal/ingenieria_social_fondo.jpg); width: 100%; padding:4vw;" class="row row-col-1">
+          <div class="container" data-aos="fade-up" style="background-color:#CCEAF4;">
             <h2 style="color:#4f4f4f" class="my-5" data-aos="fade-up">Ataques de ingeniería social</h2>
-            <h4 style="color: #a9a9a9" class="my-5" data-aos="fade-up">
+            <h4 style="color: #4f4f4f" class="my-5" data-aos="fade-up">
               Los ataques por ingeniería social se basan en un conjunto 
               de técnicas dirigidas a nosotros, los usuarios, con 
               el objetivo de conseguir que revelemos información 
@@ -71,9 +71,9 @@
               pueden variar mucho, ya que suelen utilizarse como paso 
               previo a un ataque por malware</h4>
           </div>
-          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1">
-            <div style="background-color:#4f4f4f; width: 100%; padding:4vw;" data-aos="slide-right" class="col">
-              <h3 style="color:#efefef">En la parte de abajo podrás ver un chat en el que hay una conversación, en el puedes mandar mensajes y recibir una respuesta.<br> Para fines prácticos puedes escribir alguna de estas respuestas:
+          <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2" style="width:100%;">
+            <div style="background-color:#4f4f4f; padding:4vw;" data-aos="slide-right" >
+              <h3 style="color:#a9a9a9" class="text">A continuación podrás ver un chat en el que hay una conversación, en el puedes mandar mensajes predefinidos y recibir una respuesta.<br> Para fines prácticos puedes escribir alguna de estas respuestas:
               </h3>
               <div class="container">
                   <ul  style="color:#ff3b3d">
@@ -86,30 +86,33 @@
                   </ul>
               </div>
             </div>
-            <div class="full-chat-block col" data-aos="slide-up">
-              <div class="outer-container">
-                  <div class="chat-container">
-                      <div id="chatbox">
-                          <h5 id="chat-timestamp"></h5>
-                          <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                      </div>
-                      <div class="chat-bar-input-block">
-                          <div id="userInput">
-                              <input id="textInput" class="input-box" type="text" name="msg"
-                                  placeholder="Escribe un mensaje...">
-                              <p></p>
-                          </div>
-                          <div class="chat-bar-icons">
-                              <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
-                                  onclick="sendButton()"></i>
-                          </div>
-                      </div>
-                      <div id="chat-bar-bottom">
-                          <p></p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <div style="padding:4vw; background-color:#ff3b3d;"  data-aos="slide-up" >
+              <div class="full-chat-block" >
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Escribe un mensaje...">
+                                <p></p>
+                            </div>
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
           </div>
         </div>
       </main>

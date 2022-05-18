@@ -20,18 +20,8 @@
       rel="shortcut icon"
       href="../imagenes_principal/2x/Imagotipo_2x.ico"
     />
-    <script language="JavaScript">
-        function go(){
-        
-        if (document.form.password.value=='contrasena' && document.form.usuario.value=='correoprueba@prueba.com'){ 
-                document.form.action="respuesta.html"; 
-            } 
-            else{ 
-                 alert("Porfavor ingrese correo y contraseña correctos.");
-                 
-            } 
-        }
-    </script>
+
+
 
     <!-- Custom styles for this template -->
 
@@ -80,7 +70,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../sobre_mi.html">Sobre mí</a>
+                <a class="nav-link active" href="../sobre_mi.html">Acerca de</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -130,36 +120,22 @@
       </nav>
     </header>
     <main>
-      <form name="form">
-        <label style="color: #cceaf4; font-weight: 800" class="mt-5 h2"
-        >Ingresa los datos</label
-      >
-      <br />
-      <input name="usuario" type="text" class="Input" value="" size="20" required/> 
-      <small
-        id="EmailAnouncement"
-        class="form-texto"
-        style="color: #cceaf4; font-weight: 800"
-        >Ingresa el correo: correoprueba@prueba.com.</small
-      >
-      <br />
-      <input name="password" type="password" class="Input" value="" size="20" required />
-      <small
-        id="ContrasenaAnouncement"
-        class="form-texto"
-        style="color: #cceaf4; font-weight: 800"
-        >Ingresa la contraseña: contrasena</small
-      >
-      <br />
-      <input
-        type="submit"
-        value="Entrar"
-        class="btn mt-3"
-        style="color: #a9a9a9; background-color: #4f4f4f"
-        onclick="go()"
-      /> 
+    <div class="my-5 py-5 px-5">
+      <div class="row py-5 px-5" style="background-color:#CCEAF4">
+      <form name="form" method="post">
+        <?php
+        
+          $correo = $_POST['correo'];
+          $contrasena = $_POST['contrasena'];
+        
+        echo "<h4 style='color:#a9a9a9'>Correo obtenido</h4><br><h3>".$correo."</h3><br>";
+        echo "<h4 style='color:#a9a9a9'>Contrasena obtenida</h4><br><h3>".$contrasena."</h3><br>";
+        ?>
 
       </form>
+      </div>
+
+    </div>
     </main>
     <footer id="footer_index" class="footer" style="background-color: #a9a9a9">
       <div class="container my-5">
@@ -171,7 +147,7 @@
             <a href="../contacto.html">Contacto</a>
           </li>
           <li class="list-inline-item">
-            <a href="../sobre_mi.html">Sobre mi</a>
+            <a href="../sobre_mi.html">Acerca de</a>
           </li>
           <li class="list-inline-item"><a href="../index.html">Inicio</a></li>
         </ul>

