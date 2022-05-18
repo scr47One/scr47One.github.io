@@ -65,7 +65,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../index.html"
+                  href="../index.php"
                   >Inicio</a
                 >
               </li>
@@ -149,7 +149,7 @@
           <li class="list-inline-item">
             <a href="../sobre_mi.html">Acerca de</a>
           </li>
-          <li class="list-inline-item"><a href="../index.html">Inicio</a></li>
+          <li class="list-inline-item"><a href="../index.php">Inicio</a></li>
         </ul>
       </div>
       <div class="text-center p-3" style="background-color: #4f4f4f">
