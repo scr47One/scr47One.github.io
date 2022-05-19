@@ -120,7 +120,7 @@
       </nav>
     </header>
     <main>
-    <div class="my-5 py-5 px-5">
+    <div class="my-5 py-5 px-5" style="background-image:url(../imagenes_principal/ingenieria_social_fondo.jpg)">
       <div class="row py-5 px-5" style="background-color:#CCEAF4">
       <form name="form" method="post">
         <?php
